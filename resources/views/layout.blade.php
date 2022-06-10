@@ -24,9 +24,10 @@
   <div class="preload"></div>
   <header class="space-inter">
     <div class="container container-flex space-between">
-      <figure class="logo">
-        <img src="/img/logo.png" alt="">
-      </figure>
+      <div class="logo">
+<!--        <img src="/img/logo.png" alt="">-->
+        <p style="font-size: 25px; font-style: italic;">AlexBlog</p>
+      </div>
       @include('partials.nav')
     </div>
   </header>
@@ -37,25 +38,21 @@
   <section class="footer">
     <footer>
     <div class="container">
-      <figure class="logo"><img src="/img/logo.png" alt=""></figure>
+      <div class="logo">
+        <p style="font-size: 30px; font-weight: bold; font-style: italic;">AlexBlog</p>
+      </div>
       <nav>
         <ul class="container-flex space-center list-unstyled">
-          <li><a href="#" class="c-gris-2 text-uppercase active">home</a></li>
-          <li><a href="#" class="c-gris-2 text-uppercase">about</a></li>
-          <li><a href="#" class="c-gris-2 text-uppercase">archive</a></li>
-          <li><a href="#" class="c-gris-2 text-uppercase">contact</a></li>
+          <li><a href="{{ route('pages.home') }}" class="c-gris-2 text-uppercase ">Inicio</a></li>
+          <li><a href="{{ route('pages.about') }}" class="c-gris-2 text-uppercase ">Nosotros</a></li>
+          <li><a href="{{ route('pages.archive') }}" class="c-gris-2 text-uppercase ">Archivo</a></li>
+          <li><a href="{{ route('pages.contact') }}" class="c-gris-2 text-uppercase ">Contacto</a></li>
         </ul>
       </nav>
       <div class="divider-2"></div>
-      <p>Nunc placerat dolor at lectus hendrerit dignissim. Ut tortor sem, consectetur nec hendrerit ut, ullamcorper ac odio. Donec viverra ligula at quam tincidunt imperdiet. Nulla mattis tincidunt auctor.</p>
+      <p>Estamos encantados de poder proporcionar buena información a la comunidad a través de publicaciones, categorías, autores, y más....</p>
       <div class="divider-2" style="width:80%;"></div>
-      <p>© 2017 - Zendero. All Rights Reserved. Designed & Developed by <span class="c-white">Agencia De La Web</span></p>
-      <ul class="social-media-footer list-unstyled">
-        <li><a href="#" class="fb"></a></li>
-        <li><a href="#" class="tw"></a></li>
-        <li><a href="#" class="in"></a></li>
-        <li><a href="#" class="pn"></a></li>
-      </ul>
+      <p>© 2022 - AlexBlog. Toodos los derechos reservados. Desarrollado por <span class="c-white">Alex Martínez</span></p>
     </div>
 </footer>
   </section>

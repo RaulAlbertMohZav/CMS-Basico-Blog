@@ -35,13 +35,14 @@
     <article class="post">
         <div class="content-post">
 
-            <h1>No hay publicaciones todavía.</h1>
+            <h1>No hay publicaciones disponibles.</h1>
 
         </div>
     </article>
 @endforelse
 </section><!-- fin del section.posts -->
 
+<!-- Paginacion para las publicaciones -->
 {{ $posts->appends(request()->all())->links() }}
 
 @stop
