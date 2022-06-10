@@ -82,17 +82,17 @@ class UsersTableSeeder extends Seeder
         ]);
 
         $admin = new User;
-        $admin->name = 'Jorge';
-        $admin->email = 'jorge@aprendible.com';
-        $admin->password = '123123';
+        $admin->name = 'Alex';
+        $admin->email = 'alex@gmail.com';
+        $admin->password = 'alexblog';
         $admin->save();
 
         $admin->assignRole($adminRole);
 
         $writer = new User;
-        $writer->name = 'Luis';
-        $writer->email = 'luis@aprendible.com';
-        $writer->password = '123123';
+        $writer->name = 'alex prueba';
+        $writer->email = 'alex.prueba@gmail.com';
+        $writer->password = 'alexblog';
         $writer->save();
 
         $writer->assignRole($writerRole);
