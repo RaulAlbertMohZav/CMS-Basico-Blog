@@ -27,5 +27,11 @@
                 Contacto
             </a>
         </li>
+        <li class="pure-menu-item">
+            <a href="{{ route('dashboard') }}"
+                class="pure-menu-link c-gris-2 text-uppercase {{ setActiveRoute('dashboard') }}">
+                Admin
+            </a>
+        </li>
     </ul>
 </nav>

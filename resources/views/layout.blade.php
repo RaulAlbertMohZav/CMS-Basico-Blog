@@ -47,6 +47,7 @@
           <li><a href="{{ route('pages.about') }}" class="c-gris-2 text-uppercase ">Nosotros</a></li>
           <li><a href="{{ route('pages.archive') }}" class="c-gris-2 text-uppercase ">Archivo</a></li>
           <li><a href="{{ route('pages.contact') }}" class="c-gris-2 text-uppercase ">Contacto</a></li>
+          <li><a href="{{ route('dashboard') }}" class="c-gris-2 text-uppercase ">Admin</a></li>
         </ul>
       </nav>
       <div class="divider-2"></div>
