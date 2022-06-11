@@ -56,9 +56,11 @@ class UsersController extends Controller
             'email' => 'required|email|max:255|unique:users',
         ]);
 
-        $data['password'] = str_random(8);
+        $data['password'] = 'alexblog';
+
 
         $user = User::create($data);
+
 
         if($request->filled('roles'))
         {
@@ -70,7 +72,7 @@ class UsersController extends Controller
             $user->givePermissionTo($request->permissions);
         }
 
-        UserWasCreated::dispatch($user, $data['password']);
+        //UserWasCreated::dispatch($user, $data['password']);
 
         return redirect()->route('admin.users.index')->withFlash('El usuario ha sido creado');
     }
