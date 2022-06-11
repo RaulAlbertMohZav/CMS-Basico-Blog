@@ -20,7 +20,7 @@ Este es un proyecto de prueba realizado en el curso **Desarrollo de un blog con 
 11. Ejecuta `php artisan db:seed`
 13. Abre la aplicación en el navegador
 14. Accede a `/login` para ingresar a la administración
-    * Email: jorge@aprendible.com
-    * Password: 123123
+    * Email: alex@gmail.com
+    * Password: alexblog
 
 #### Todos los proyectos creados en los cursos de Aprendible están bajo la [licencia MIT](https://opensource.org/licenses/MIT).
